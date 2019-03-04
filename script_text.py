@@ -8,7 +8,7 @@ from nltk.corpus import stopwords
 from sklearn.metrics.pairwise import cosine_similarity
 def load_data():
 	#clear data, etc
-	with open('test.txt', 'r+') as file:
+	with open('test2.txt', 'r+') as file:
 		data = [[word for word in line.split() if word not in stopwords.words('english')] for line in file]
 		return data
 
